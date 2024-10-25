@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Map with Random Markers</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>3 Random Locations in the Central United States</h1>
+    <div id="map"></div>
+    <div id="marker-info">
+        <h1>Marker 1:</h1>
+        <h2><span id="marker1-coords"></span></h2>
+        <h3>Locality: <span id="marker1-locality"></span></h3>
+
+        <br>
+
+        <h1>Marker 2:</h1>
+        <h2><span id="marker2-coords"></span></h2>
+        <h3>Locality: <span id="marker2-locality"></span></h3>
+
+        <br>
+
+        <h1>Marker 3:</h1>
+        <h2><span id="marker3-coords"></span></h2>
+        <h3>Locality: <span id="marker3-locality"></span></h3>
+    </div>
+    <script src="map.js"></script>
+</body>
+</html>
